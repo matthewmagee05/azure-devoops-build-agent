@@ -1,11 +1,6 @@
 #!/bin/bash
 set -e
 
-# Select a default .NET version if one is not specified
-if [ -z "$DOTNET_VERSION" ]; then
-  DOTNET_VERSION=3.1.300
-fi
-
 # Add the Node.js PPA so that we can install the latest version
 curl -sL https://deb.nodesource.com/setup_14.x | bash -
 
